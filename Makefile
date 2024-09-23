@@ -9,7 +9,7 @@ SHELL = /bin/sh
 CC := $(CC)
 CXX := $(CXX)
 CFLAGS := $(CFLAGS) -fPIE -DBUILD_INFO=$(BUILD_INFO)
-CXXFLAGS := $(CXXFLAGS) -std=c++17 -fPIE -DBUILD_INFO=$(BUILD_INFO)
+CXXFLAGS := $(CXXFLAGS) -std=gnu++17 -fPIE -DBUILD_INFO=$(BUILD_INFO) #-I/mingw64/include -L/mingw64/lib 
 LDFLAGS := $(LDFLAGS)
 WARNING_FLAGS := -Wall -Wshadow -Wsign-compare -Wextra -Wunreachable-code -Wuninitialized -Wshadow
 RELEASE_FLAGS := -O3 -DNDEBUG
